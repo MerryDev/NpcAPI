@@ -1,5 +1,7 @@
 package de.digitaldevs.api.listener;
 
+import de.digitaldevs.api.NPCAPI;
+import de.digitaldevs.api.events.NPCSpawnEvent;
 import de.digitaldevs.api.npc.NPC;
 import de.digitaldevs.api.netty.PacketReader;
 import lombok.Getter;
@@ -28,7 +30,12 @@ public class ConnectionListener implements Listener {
     npc.setLocation(player.getLocation().add(3, 0, 0));
     npc.setSkin("MerryChrismas");
     npc.spawn();
+  }
 
+  @EventHandler
+  public void onSpawn(NPCSpawnEvent event) {
+    NPC npc = event.getNPC();
+    System.out.println(npc.toString());
   }
 
   @EventHandler

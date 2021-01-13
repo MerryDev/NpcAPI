@@ -13,7 +13,7 @@ public class NPCTeleportEvent extends Event implements Cancellable {
 
   private static final HandlerList handlerList = new HandlerList();
   private boolean canceled = false;
-  @Getter private final NPC npc;
+  @Getter private final NPC NPC;
   @Getter private final Location location;
 
   @Override
