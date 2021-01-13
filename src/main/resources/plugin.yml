@@ -1,0 +1,4 @@
+name: ${project.name}
+version: ${project.version}-DIGITALDEVS
+author: MerryChrismas
+main: de.digitaldevs.api.NPCAPI
