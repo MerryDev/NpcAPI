@@ -7,7 +7,6 @@ import static org.bukkit.Bukkit.getPluginManager;
 import de.digitaldevs.api.handler.EventHandler;
 import de.digitaldevs.api.handler.NPCHandler;
 import de.digitaldevs.api.listener.ConnectionListener;
-import de.digitaldevs.api.npc.NPC;
 import de.digitaldevs.api.netty.PacketReader;
 import de.digitaldevs.api.utils.ConsoleHandler;
 import lombok.Getter;
@@ -39,7 +38,7 @@ public class NPCAPI extends JavaPlugin {
           packetReader.eject();
         }
       });
-    }catch (Exception exception) {
+    }catch (Exception ignored) {
     }
   }
 
