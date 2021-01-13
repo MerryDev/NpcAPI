@@ -26,6 +26,10 @@ public class PlayerInteractAtNPCEvent extends Event implements Cancellable {
     this.canceled = b;
   }
 
+  public static HandlerList getHandlerList() {
+    return handlerList;
+  }
+
   @Override
   public HandlerList getHandlers() {
     return handlerList;

@@ -26,6 +26,10 @@ public class NPCTeleportEvent extends Event implements Cancellable {
     canceled = b;
   }
 
+  public static HandlerList getHandlerList() {
+    return handlerList;
+  }
+
   @Override
   public HandlerList getHandlers() {
     return handlerList;
