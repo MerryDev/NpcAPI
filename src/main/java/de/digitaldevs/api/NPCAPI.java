@@ -39,9 +39,6 @@ public class NPCAPI extends JavaPlugin {
           packetReader.eject();
         }
       });
-     for(NPC npc : npcHandler.getNpcs()) {
-       npc.despawn();
-     }
     }catch (Exception exception) {
     }
   }
